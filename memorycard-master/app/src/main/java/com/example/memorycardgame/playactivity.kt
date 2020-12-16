@@ -35,6 +35,7 @@ class playactivity : AppCompatActivity() {
 
 
 
+
         val name = playerE
         val intent = intent
         val nameplayer = intent.getStringExtra("PLAYER_NAME")
@@ -56,50 +57,61 @@ class playactivity : AppCompatActivity() {
 
 
         im1.setOnClickListener {
+            if( tab.size < 2) {
                 val r = tabImg2[tabb[0]]
                 tabImg.add(im1)
                 tab.add(r)
                 im1.setImageResource(r)
-          compare()
+                compare()
+            }
         }
         im2.setOnClickListener {
-
-            val r = tabImg2[tabb[1]]
-            tabImg.add(im2)
-            tab.add(r)
-            im2.setImageResource(r)
-compare()
+                 if ( tab.size < 2) {
+                     val r = tabImg2[tabb[1]]
+                     tabImg.add(im2)
+                     tab.add(r)
+                     im2.setImageResource(r)
+                     compare()
+                 }
         }
 
         im3.setOnClickListener {
-            val r = tabImg2[tabb[2]]
-            tabImg.add(im3)
-            tab.add(r)
-            im3.setImageResource(r)
-compare()
+            if(tab.size < 2) {
+                val r = tabImg2[tabb[2]]
+                tabImg.add(im3)
+                tab.add(r)
+                im3.setImageResource(r)
+                compare()
+            }
         }
 
         im4.setOnClickListener {
+            if (tab.size < 2) {
             val r = tabImg2[tabb[3]]
             tabImg.add(im4)
             tab.add(r)
             im4.setImageResource(r)
-compare()
+            compare()
+        }
         }
         im5.setOnClickListener {
-            val r = tabImg2[tabb[4]]
-            tabImg.add(im5)
+            if(tab.size < 2) {
+                val r = tabImg2[tabb[4]]
+                tabImg.add(im5)
 
-            tab.add(r)
-            im5.setImageResource(r)
-compare()
+                tab.add(r)
+                im5.setImageResource(r)
+                compare()
+            }
         }
         im6.setOnClickListener {
-            val r = tabImg2[tabb[5]]
-            tabImg.add(im6)
-            tab.add(r)
-            im6.setImageResource(r)
-compare()
+            if(tab.size < 2) {
+                val r = tabImg2[tabb[5]]
+                tabImg.add(im6)
+                tab.add(r)
+                im6.setImageResource(r)
+                compare()
+            }
         }
 
         returnHomeE()
